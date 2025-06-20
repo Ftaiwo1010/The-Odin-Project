@@ -1,0 +1,25 @@
+.flex-container {
+   display: flex;
+}
+
+
+.flex-container > div {
+   background: peachpuff;
+   border: 4px solid brown;
+   height: 100px; 
+   flex: 1;
+}
+
+
+.two {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+
+.two > div {
+    flex: 1;
+    border: 2px solid crimson;
+    height: 70px;
+}
