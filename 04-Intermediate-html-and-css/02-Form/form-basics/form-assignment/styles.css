@@ -1,0 +1,103 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+
+body {
+   text-align: center; 
+}
+
+
+.contact-form {
+   display: inline-block;  
+   padding: 1em;
+   border: 1px solid #ccc;
+   border-radius: 1em;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+
+.contact-form p + p  {
+     margin-top: 1em;
+}
+
+
+.contact-form label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+
+.contact-form input,.contact-form textarea {
+   font: 1em sans-serif;
+   width: 300px; 
+   border: 1px solid #999;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+   outline-style: solid;
+   outline-color: black; 
+}
+
+
+.contact-form textarea {
+   vertical-align: top; 
+   height: 5em;
+}
+
+
+.contact-form .button {
+   padding-left: 90px; 
+}
+
+
+.contact-form button  {
+   margin-left: 0.5em; 
+}
+
+
+
+/* styling fruit form */
+
+#fruit-form input[type="checkbox"] {
+   appearance: none; 
+   position: relative;
+   width: 1em;
+   height: 1em;
+   border: 1px solid gray;
+   color:green;
+   vertical-align: -2px;
+}
+
+
+
+#fruit-form input[type="checkbox"]::before {
+   content: "✔";
+   position: absolute;
+   font-size: 1.2em;
+   right: -1px;
+   top: -0.3em;
+   visibility: hidden;
+}
+
+
+
+#fruit-form input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+
+
+input[type="checkbox"]:disabled {
+  border-color: black;
+  background: #ddd;
+  color: gray;
+}
+
+
+

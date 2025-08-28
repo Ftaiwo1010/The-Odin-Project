@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tables</title>
+</head>
+<body>
+ <!-- Table Basic  -->
+  <table>
+    <h1>Simple table</h1>
+    <tr>
+      <td>Hi, I'm your first cell.</td>
+      <td>I'm your second cell.</td>
+      <td>I'm your third cell.</td>
+      <td>I'm your fourth cell.</td>
+    </tr>
+    
+    <tr>
+      <td>Second row, first cell.</td>
+      <td>Cell 2.</td>
+      <td>Cell 3.</td>
+      <td>Cell 4.</td>
+    </tr>
+  </table><br><br>
+
+  <!-- Adding headers with <th> elements -->
+  <table>
+    <h1>Dog Table</h1>
+    <tr>
+      <td>&nbsp;</td>
+      <th>Knocky</th>
+      <th>Flor</th>
+      <th>Ella</th>
+      <th>Juan</th>  
+    </tr> 
+    <tr>
+      <th>Breed</th>
+      <td>Jack Russell</td>
+      <td>Poodle</td>
+      <td>Streetdog</td>
+      <td>Cocker Spaniel</td>  
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>16</td>
+      <td>9</td>
+      <td>10</td>
+      <td>5</td>  
+    </tr>
+    <tr>
+      <th>Owner</th>
+      <td>Mother-in-law</td>
+      <td>Me</td>
+      <td>Me</td>
+      <td>Sister-in-law</td>
+  </tr>
+  <tr>
+     <th>Eating Habits</th>
+     <td>Eats everyone's leftovers</td>
+     <td>Nibbles at food</td>
+     <td>Hearty eater</td>
+     <td>Will eat till he explodes</td>
+   </tr>
+  </table> <br><br>
+  
+  <!-- Allowing cells to span multiple rows and columns -->
+   <table>
+    <h1>Animal Table</h1>
+     <tr>
+      <th colspan="2">Animals</th>
+    </tr>
+    <tr>
+      <th colspan="2">Hippopotamus</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Horse</th>
+      <td>Mare</td>
+    </tr>
+    <tr>
+      <td>Stallion</td>
+    </tr>
+    <tr>
+      <th colspan="2">Crocodile</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Chicken</th>
+      <td>Hen</td>
+    </tr>
+    <tr>
+      <td>Rooster</td>
+    </tr>
+   </table><br><br>
+
+
+   <!-- Table Accessibility -->
+   <table>
+    <h1>My spending record</h1>
+    <caption>How I chose to spend my money</caption>
+      <thead>
+        <tr>
+          <th>Purchase</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Evaluation</th>
+          <th>Cost (€)</th>
+        </tr> 
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="4">SUM</td>
+          <td>118</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Haircut</td>
+          <td>Hairdresser</td>
+          <td>12/09</td>
+          <td>Great idea</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Lasagna</td>
+          <td>Restaurant</td>
+          <td>12/09</td>
+          <td>Regrets</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Shoes</td>
+          <td>Shoeshop</td>
+          <td>13/09</td>
+          <td>Big regrets</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>Toothpaste</td>
+          <td>Supermarket</td>
+          <td>13/09</td>
+          <td>Good</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    
+   </table> 
+</body>
+</html>
