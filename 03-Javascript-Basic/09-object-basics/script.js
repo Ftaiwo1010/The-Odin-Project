@@ -243,6 +243,100 @@ console.log(primitive);
 
 
 
+// Cloning and mergin, Object.assign
+
+let newUser = {
+   name: "John",
+   age: 30
+};
+
+
+let clone = {};  // the new empty object
+
+// let's copy all user properties into it
+for (let key in newUser) {
+   clone[key] = newUser[key];
+}
+
+// now clone is a fully independent object with the same content
+clone.name = "Pete"; // changed the data in it
+
+console.log(newUser.name);
+console.log(clone);
+
+
+// We can also use the method Object.assign.
+let permission1 = { canView: true };
+let permission2 = { canEdit: true };
+
+// copies all properties from permissions1 and permissions2 into newUser
+Object.assign(newUser, permission1, permission2);
+
+// now newUser = { name: "John", canView: true, canEdit: true }
+console.log(newUser.name);
+console.log(newUser.canView);
+console.log(newUser.canEdit);
+
+
+
+// We can use OBject.assign to perform a simple object cloning
+let userLuke = {
+   name: 'Luke',
+   age: 20
+};
+
+
+let newClone = Object.assign({}, userLuke);
+
+newClone.lunch = 'Burger';
+console.log(newClone);
+
+
+
+let spreadLuke = {...userLuke};
+spreadLuke.surname = 'Smith';
+console.log(spreadLuke);
+
+
+// structuredClone
+
+// The call structuredClone(object) clones the object with all nested properties.
+// Here’s how we can use it in our example:
+
+let nestedUser = {
+  name: "John",
+  sizes: {
+    height: 182,
+    width: 50
+  }
+};
+
+
+let nestedClone = structuredClone(nestedUser);
+console.log( user.sizes === clone.sizes ); // false, different objects
+
+// nestedUser and nestedClone are totally unrelated now
+nestedUser.sizes.width = 60;    // change a property from one place
+console.log(nestedUser.sizes.width);
+console.log(nestedClone.sizes.width); // 50, not related
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Exercises
